@@ -32,7 +32,7 @@ public class MovieController {
         return new ResponseEntity<>(movieService.searchByMovieName(name), HttpStatus.OK);
     }
 
-    @GetMapping("/{rating}")
+    @GetMapping("/get-by-rating/{rating}")
     public ResponseEntity<List<MovieDto>> getMovieByRating(@PathVariable("rating") int rating) {
         return new ResponseEntity<>(movieService.getMovieByRating(rating), HttpStatus.OK);
     }
@@ -42,7 +42,7 @@ public class MovieController {
         return new ResponseEntity<>(movieService.delete(name), HttpStatus.OK);
     }
 
-    @GetMapping("/{categoryName}")
+    @GetMapping("/get-by-categories/{categoryName}")
     public ResponseEntity<List<MovieDto>> getMoviesByCategoryName(@PathVariable("categoryName") String categoryName) {
         return new ResponseEntity<>(movieService.getMoviesByCategoryName(categoryName), HttpStatus.OK);
     }
