@@ -30,6 +30,7 @@ public class MovieService {
         movie.setDuration(request.getDuration());
         movie.setImage(request.getImage());
         movie.setCategory(request.getCategory());
+        movie.setDescription(request.getDescription());
 
         return movieDtoConverter.convert(movieRepository.save(movie));
     }

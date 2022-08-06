@@ -17,6 +17,7 @@ public class Movie {
     private int id;
     private String name;
     private int rating;
+    private String description;
     private String producer;
     private String releaseDate;
     private String language;

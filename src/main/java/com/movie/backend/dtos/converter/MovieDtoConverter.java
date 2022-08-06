@@ -13,6 +13,7 @@ public class MovieDtoConverter {
     public MovieDto convert(Movie movie) {
         return new MovieDto(movie.getName(),
                 movie.getRating(),
+                movie.getDescription(),
                 movie.getProducer(),
                 movie.getReleaseDate(),
                 movie.getLanguage(),

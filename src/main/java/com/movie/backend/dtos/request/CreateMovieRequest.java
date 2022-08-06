@@ -7,6 +7,7 @@ import lombok.Data;
 public class CreateMovieRequest {
 
     private String name;
+    private String description;
     private String producer;
     private String releaseDate;
     private String language;
