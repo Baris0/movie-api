@@ -24,6 +24,6 @@ public class Movie {
     private LocalDate updateDate;
     private String duration;
     private String image;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     Category category;
 }
