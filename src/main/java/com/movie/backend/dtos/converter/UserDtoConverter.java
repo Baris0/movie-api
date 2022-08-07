@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Component
-public class UserDtoConvert {
+public class UserDtoConverter {
 
     public UserDto convert(User user) {
         return new UserDto(user.getUserName(),
